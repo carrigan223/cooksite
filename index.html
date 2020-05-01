@@ -8,6 +8,8 @@
 
     <!-- STYLESHEETS IN HERE -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=ZCOOL+XiaoWei&display=swap" />
     <!-- STYLESHEETS IN HERE -->
 
     <title> Pierre : Your personal sous chef </title>
@@ -15,11 +17,57 @@
 </head>
 
 <body>
-    <header> </header>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+            <div class="col-4">
+                <div class="col-4">
+                    <h1 class="text-center"> Pierre </h1>
+                    <h4 class="text-center"><small> Your Personal Kitchen Assistant </small></h4>
+                </div>
+            </div>
+            </div>
+        </div> 
+    </header>
+
+    
+    <nav class="navbar navbar-dark nav-bg navbar-collapse" >
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="mainNav">
+                <ul class="navbar-row">
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <a href="#">link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col">Stuff</div>
+    </div>
+</div>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row row-content">
+              <div class="col text-light">site footer</div>
+              
+            </div>            
+        </div>
+    </footer>
 
 
-
-    <footer> </footer>
 
     <!-- JQUERY FIRST, THEN POPPER.JS, THEN BOOTSTRAP JS PLUGINS -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>

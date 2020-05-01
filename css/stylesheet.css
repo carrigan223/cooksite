@@ -1,0 +1,21 @@
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, black, silver, silver, black );
+    color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif; }
+
+h4 {
+    font-family: 'ZCOOL XiaoWei', serif; 
+    }
+
+.nav-bg {
+    background-image: linear-gradient(to right,maroon,maroon, crimson,maroon, maroon);
+}
+
+.site-footer {
+    background-image: linear-gradient(to right, black, white);
+    padding: 10px 0; }
