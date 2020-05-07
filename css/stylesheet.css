@@ -1,28 +1,24 @@
 .jumbotron {
     margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, maroon, rgb(104, 58, 58), black );
+    padding: 40px;
+    background-color: forestgreen;
     color: white;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif; }
+    font-family: 'ZCOOL Xiaowei', serif; }
 
 h4 {
     font-family: 'ZCOOL XiaoWei', serif; 
     }
 
-.nav-bg {
-    background-image: linear-gradient(to right,maroon,rgb(104,58,58),maroon, rgb(31, 29, 29));
-}
+
 
 .site-footer {
     background-image: linear-gradient(to right, black, white);
     padding: 10px 0; }
 
-.carImage {
-    height: 700px;
-}
+
 
 .row-content {
     padding: 50px 0;
@@ -31,4 +27,8 @@ h4 {
 
 a {
     color: rgb(104, 58, 58);
+}
+
+.modal-content {
+    background-image: linear-gradient(to right, black, green, black);
 }

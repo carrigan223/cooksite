@@ -1,2 +1,4 @@
-
-    $(".carousel").carousel({interval: 2500});
+$('#loginButton').click(function() {
+    $('#loginModal').modal('show');
+});
+    

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=ZCOOL+XiaoWei&display=swap" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css" />
     <!-- STYLESHEETS IN HERE -->
 
     <title> Pierre : Your personal sous chef </title>
@@ -17,103 +20,88 @@
 </head>
 
 <body>
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-            <div class="col-4">
-                <div class="col-4">
-                    <h1 class="text-center"> Pierre </h1>
-                    <h4 class="text-center"><small> Your Personal Kitchen Assistant </small></h4>
-                </div>
-            </div>
-            </div>
-        </div> 
-    </header>
-
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title"> Login </h3>
-                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail"> Email address </label>
-                                    <input type="email" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword"> Password </label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal"> Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1"> Sign in </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-         </div>
-    </div>
-    
-    <nav class="navbar navbar-dark nav-bg navbar-collapse" >
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
+<!--Navbar-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top" >
+        <div class="container-fluid">
+           <a class="navbar-brand" href="#"> Pierre </a>
+           <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" 
+           data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"> 
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="mainNav">
-                <ul class="navbar-row">
-                    <a class="col-3 text-light" href="#"> <large> link </large> </a>
-                    <a class="col-3 text-light" href="#"> <large> link </large> </a>
-                    <a class="col-3 text-light" href="#"> <large> link </large> </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive"> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="active"> Home </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> The Kitchen </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> The Lounge </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
                 </ul>
-                <span>
-                    
-                </span>
-                    
             </div>
         </div>
     </nav>
+<!--Navbar-->
 
-  
+<!-- header/carousel-->
+    <header>
+        <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+
+        </div>
+
+    </header>
+<!-- header/carousel-->
+    
+    
+
 
     <div class="container">
-        <div class="row row-content">
-            <div class="col"> 
-                <a href="#"><h3>Featured Recipes</h3></a>
-                <p> Our Favorite Recipes This Week </p>
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="#"><h3> The Assist </h3>
+            <img src="img/assistthumb.jpg" alt="plating dinner" /></a> 
+            <p> Tips to help you get started in the kitchen. </p>
             </div>
-            <div class="col">
-                <a href=""><h3>Featured Cocktails</h3></a>
-                <p>This Weeks Boozy Buddy for Your Cooking Adventures</p>
+            <div class="col-sm-6">
+                <a href="#"><h3> Chef's Specials </h3>
+                <img src="img/picattathumb.jpg" alt="chicken picatta"></a> 
+                <p> Our Favorite Recipes This Week. </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 order-last">
+                <a href="#"><h3> Dessert </h3>
+                <img src="img/lavacakethumb.jpg" alt="chocalate lava cake"></a> 
+                <p> Save the best for Last. </p>
+            </div>                    
+            <div class="col-sm-6">
+                <a href="#"><h3> Apéritif </h3>
+                <img src="img/cocktailsthumb.jpg" alt="mixed drinks"></a> 
+                <p> 
+                    Whether a post meal dram of whiskey or something to whet the appetite,
+                    here is our weekly cocktail specials.
+                </p>
             </div>
         </div>
     </div>
 
-
-
     <footer class="site-footer">
         <div class="container">
-            <div class="row row-content">
-              <div class="col text-light">site footer</div>
-              
-            </div>            
+            <div class="row">
+                <div class="col">
+                    <h5> Links </h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5> Social </h5>
+                    <a href="http://instagram.com"> Instagram </a>
+                    <a href="http://twitter.com"> Twitter </a>
+                </div>
+            </div>
         </div>
     </footer>
-
-
 
     <!-- JQUERY FIRST, THEN POPPER.JS, THEN BOOTSTRAP JS PLUGINS -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>
