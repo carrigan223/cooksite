@@ -6,10 +6,16 @@
 }
 
 h1 {
-    font-family: 'ZCOOL Xiaowei', serif; }
+    font-family: 'ubuntu', serif; }
+
+h3 {
+    font-family: 'raleway', sans-serif;
+    color: #196e14;
+}
 
 h4 {
-    font-family: 'ZCOOL XiaoWei', serif; 
+    font-family: 'ubuntu', serif;
+    
     }
 
 .site-footer {
@@ -75,4 +81,12 @@ label {
 
 button {
     font-family: 'ubuntu',sans-serif;
+}
+
+.contact-bg {
+    background: url('/img/kitchencounter.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
